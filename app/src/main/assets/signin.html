@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<title>Matrimony Login</title>
+	<style>
+
+
+body {
+  background: #94618e;
+}
+.btn-color {
+	background-color: #773879; /* red #E12929; */
+}
+.form-container {
+	text-align: center;
+    margin:10px;
+    text-align: center;
+}
+.form-w {
+	width: 100%;
+    overflow: hidden;
+
+}
+.txt {
+	width: 90%;
+	padding: 15px 10px;
+    margin: 10px;
+    font-size: 16px;
+    background: transparent;
+		border-bottom: 1px solid #eee;
+		border-left: 0;
+		border-right: 0;
+		border-top: 0;
+    color: #fff;
+}
+
+.button {
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin:10px;
+    width:90%;
+}
+
+input::placeholder {
+  color: #DDD;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+
+.alc {
+	text-decoration: none;
+    color: #ddd;
+}
+.err{
+	color:#ff7878;
+}
+</style>
+</head>
+<body>
+<div class="form-container">
+	<img src="file:///android_asset/ic_launcher.png" alt="..." style="max-height: 100px;padding: 30px;">
+	<div><span class="err"></span></div>
+	<form class="form-w" id="matrimonyLoginForm" method="post" action="http://localhost/account/signin">
+		<input type="text" placeholder="Username" name="username" class="txt" required>
+		<input type="password" placeholder="Password"  name="password" class="txt" required>
+		<div>
+			<button type="submit" class="button btn-color">Log in</button>
+		</div>
+		<div style="margin-top:15px;">
+			<a href="signup.html" class="alc">Don't have an account?</a>
+		</div>
+	</form>
+</div>
+
+</body>
+</html>
